@@ -1,11 +1,11 @@
 from django.urls import path
 
-from apps.driving.api.views import TicketExaminationListView
+from apps.driving.api.views import TicketListView
 
 urlpatterns = [
     # /api/driving
     path(
         'tickets/',
-        TicketExaminationListView.as_view(),
+        TicketListView.as_view(),
         name='api_driving_list')
 ]

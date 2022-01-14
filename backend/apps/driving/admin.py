@@ -8,6 +8,7 @@ from apps.driving.models import Chapter, Ticket
 class ChapterAdmin(admin.ModelAdmin):
     list_display = ['id', 'text']
 
+
 @admin.register(Ticket)
 class TicketAdmin(admin.ModelAdmin):
-    list_display = ['id', 'chapter', 'question', 'picture', 'answer', 'explanation']
+    list_display = ['id', 'chapter', 'question', 'answer', 'explanation']
